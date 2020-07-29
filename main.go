@@ -13,5 +13,6 @@ func handlerIndex(w http.ResponseWriter, r *http.Request) {
 func main() {
 	// Registering a Request Handler
 	http.HandleFunc("/", handlerIndex)
+	// Listen for HTTP Connection
 	http.ListenAndServe(":8888", nil)
 }
